@@ -4,14 +4,11 @@ Epifi Screening test project
 This is a project created to Validate PAN card Number on Client Side and BirthDate Validation 
 
 Points considered:
-i) Entered birthdate must be a valid date.
-ii) Pan number must be validated on client.
-iii) If birthdate / pan number is not valid then the next button must be disabled.
-iv) On click of Next button show toast: "Details submitted successfully" and finish the activity.
-v) Dismiss activity on click of "I don't have a PAN"
-vi) Architecture to be followed: MVVM
-vii) Language: Kotlin
-viii) Use of coroutines / RxJava is a plus.
+1.Entered birthdate must be a valid date.
+2.Pan number must be validated on client.
+3. If birthdate / pan number is not valid then the next button must be disabled.
+4.On click of Next button show toast: "Details submitted successfully" and finish the activity.
+5.Dismiss activity on click of "I don't have a PAN"
 
 # Screens
 
