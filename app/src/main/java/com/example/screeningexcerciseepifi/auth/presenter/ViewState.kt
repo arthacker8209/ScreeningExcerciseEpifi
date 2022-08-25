@@ -1,0 +1,1 @@
+package com.example.screeningexcerciseepifi.auth.presentersealed class ViewState<out T>{    data class Error(val errorMessage: String) : ViewState<Nothing>()    data class Success<T>(val data: T) : ViewState<T>()}

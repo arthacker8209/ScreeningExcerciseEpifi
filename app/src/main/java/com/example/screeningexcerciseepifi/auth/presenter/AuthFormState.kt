@@ -1,0 +1,1 @@
+package com.example.screeningexcerciseepifi.auth.presenterdata class AuthFormState(        val panNumber:String="",        val panNumberError:String?=null)

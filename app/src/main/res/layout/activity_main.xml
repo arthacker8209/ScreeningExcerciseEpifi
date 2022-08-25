@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.presenter.MainActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="24dp">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="@string/title"
+        android:textColor="@color/orange"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/tv1"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+    <TextView
+        android:id="@+id/tvPanNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pan_number"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toTopOf="@+id/panNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/panNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edt_pan_higlight_background"
+        android:hint="@string/pan_no"
+        android:maxLength="10"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tvPanError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Something is wrong"
+        android:textColor="@color/errorRed"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/panNumber"
+        app:layout_constraintStart_toStartOf="@+id/panNumber"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birthdate"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toTopOf="@+id/dateOfBirthLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/dateOfBirthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/panNumber">
+
+        <EditText
+            android:id="@+id/edtDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_dob_higlight_background"
+            android:hint="Day"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/edtMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_dob_higlight_background"
+            android:hint="Month"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/edtYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_dob_higlight_background"
+            android:hint="Year"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDateError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Something is wrong"
+        android:visibility="gone"
+        android:textColor="@color/errorRed"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirthLayout"
+        app:layout_constraintStart_toStartOf="@+id/dateOfBirthLayout" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tv2"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:enabled="false"
+        android:text="@string/next"
+        app:layout_constraintBottom_toTopOf="@+id/btnNoPan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/btnNoPan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/i_don_t_have_a_pan"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

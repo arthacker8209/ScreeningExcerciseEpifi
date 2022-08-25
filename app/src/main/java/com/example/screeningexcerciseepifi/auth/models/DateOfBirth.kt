@@ -1,0 +1,1 @@
+package com.example.screeningexcerciseepifi.auth.modelsdata class DateOfBirth(        var day:String = "",        var month:String = "",        var year:String = "")

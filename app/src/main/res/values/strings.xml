@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScreeningExcerciseEpifi</string>
+    <string name="title">S.</string>
+    <string name="tv1">First of the few steps to set you up with a Bank Account</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="birthdate">BirthDate</string>
+    <string name="next">Next</string>
+    <string name="i_don_t_have_a_pan">I don\'t have a PAN</string>
+    <string name="tv2"><![CDATA[Providing PAN & Date of Birth helps us to find and fetch your KYC from central registery by the Government of India . Learn More]]></string>
+    <string name="pan_no">Pan No</string>
+</resources>

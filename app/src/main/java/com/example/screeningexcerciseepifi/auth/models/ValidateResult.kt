@@ -1,0 +1,1 @@
+package com.example.screeningexcerciseepifi.auth.modelsdata class ValidateResult(        val isSuccessful: Boolean,        val error: String? = null        )

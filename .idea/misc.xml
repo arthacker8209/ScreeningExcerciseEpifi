@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Trell/AndroidStudioProjects/ScreeningExcerciseEpifi/app/src/main/res/drawable/edit_field_background.xml" value="0.123" />
+        <entry key="..\:/Users/Trell/AndroidStudioProjects/ScreeningExcerciseEpifi/app/src/main/res/drawable/edt_dob_background.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Trell/AndroidStudioProjects/ScreeningExcerciseEpifi/app/src/main/res/drawable/edt_grey_background.xml" value="0.123" />
+        <entry key="..\:/Users/Trell/AndroidStudioProjects/ScreeningExcerciseEpifi/app/src/main/res/drawable/edt_pan_higlight_background.xml" value="0.123" />
+        <entry key="..\:/Users/Trell/AndroidStudioProjects/ScreeningExcerciseEpifi/app/src/main/res/font/poppins_bold.xml" value="0.15433946130825138" />
+        <entry key="..\:/Users/Trell/AndroidStudioProjects/ScreeningExcerciseEpifi/app/src/main/res/layout/activity_main.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
