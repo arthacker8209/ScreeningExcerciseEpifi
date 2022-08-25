@@ -77,7 +77,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun onSubmitButtonClicked(){
             binding.submitButton.setOnClickListener {
-                Toast.makeText(this, "Validation completed", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Details submitted successfully", Toast.LENGTH_SHORT).show()
+                finish()
             }
     }
 
